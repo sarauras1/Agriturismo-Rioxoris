@@ -104,7 +104,7 @@
             <li><a href="#mu-slider">HOME</a></li>
             <li><a href="#mu-about-us">ABOUT</a></li>
             <!-- <li><a href="#mu-restaurant-menu">MENU</a></li> -->
-            <!-- <li><a href="#mu-reservation">RESERVATION</a></li>                        -->
+            <li><a href="#mu-reservation">RESERVATION</a></li>                        -->
             <li><a href="#mu-gallery">GALLERIA</a></li>
             <!-- <li><a href="#mu-chef">OUR TEAM</a></li> -->
             <li><a href="#camere">CAMERE</a></li>
@@ -854,7 +854,10 @@
             <div class="mu-reservation-content">
               <p>Grazie per aver scelto agriturismo Rioxoris. La preghiamo di compilare la tabella
                 sottostante per prenotazioni. La ricontatteremo al piu presto per conferma.</p>
-              <form name="prenotazione" method="POST" data-netlify="true" class="mu-reservation-form">
+              <form name="prenotazione" method="POST" data-netlify="true"  netlify-honeypot="bot-field" class="mu-reservation-form">
+                <p class="hidden">
+             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+               </p>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -905,6 +908,7 @@
                     <textarea class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
                   </div>
                 </div>
+                  <div data-netlify-recaptcha="true"></div>
                 <button type="submit" class="mu-readmore-btn">INVIA</button>
             </div>
             </form>
@@ -1533,7 +1537,10 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mu-contact-left">
-                    <form name="contatto" method="POST" data-netlify="true" class="mu-contact-form">
+                    <form name="contatto" netlify-honeypot="bot-field" method="POST" data-netlify="true" class="mu-contact-form">
+                      <p class="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
                       <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Name">
@@ -1551,6 +1558,7 @@
                         <textarea class="form-control" id="message" cols="30" rows="10"
                           placeholder="Type Your Message"></textarea>
                       </div>
+                        <div data-netlify-recaptcha="true"></div>
                       <button type="submit" class="mu-send-btn">Send Message</button>
                     </form>
                   </div>
