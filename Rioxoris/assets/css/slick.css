@@ -119,7 +119,7 @@
 }
 
 /*=============================================================================*/
-@charset 'UTF-8';
+
 /* Slider */
 .slick-loading .slick-list
 {
@@ -129,10 +129,9 @@
 /* Icons */
 @font-face
 {
-   /* font-family: 'slick';
+    font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');*/
 }
@@ -160,15 +159,7 @@
     outline: none; 
     z-index: 9;
 }
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
-   /* color: #000;
-    outline: none;
-    background: transparent;*/
-}
+
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
@@ -180,7 +171,7 @@
 .slick-next.slick-disabled:before
 {
     opacity: .6;
-     /*opacity: 1;*/
+
 }
 
 .slick-prev:before,
@@ -233,11 +224,7 @@
     content: '\f105';
 }
 
-/* Dots */
-.slick-slider
-{
-    /*margin-bottom: 30px;*/
-}
+
 
 .slick-dots
 {
