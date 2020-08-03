@@ -854,7 +854,7 @@
             <div class="mu-reservation-content">
               <p>Grazie per aver scelto agriturismo Rioxoris. La preghiamo di compilare la tabella
                 sottostante per prenotazioni. La ricontatteremo al piu presto per conferma.</p>
-              <form class="mu-reservation-form">
+              <form name="prenotazione" method="POST" data-netlify="true" class="mu-reservation-form">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -1437,7 +1437,7 @@
                 <p class="mu-camere-para">L'agriturismo è dotato di 5 camere (tre doppie e due triple) arredate
                   con cura, ognuna con bagno interno,
                   riscaldamento
-                  autonomo, pulizia giornaliera e biancheria inclusa.
+                  autonomo. Pulizia giornaliera e biancheria inclusa, su richiesta.
                   Le nostre camere sono attrezzate di frigobar e per il soggiorno in compagnia di animali.
                   Ogni camera si affaccia
                   nell'ampio cortile dove si respira l'aria pulita dell'aperta campagna.</p>
@@ -1533,7 +1533,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mu-contact-left">
-                    <form class="mu-contact-form">
+                    <form name="contatto" method="POST" data-netlify="true" class="mu-contact-form">
                       <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Name">
