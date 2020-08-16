@@ -1569,7 +1569,7 @@
                       </address>
                     </div>
 
-            
+                 
                   <a href="https://api.whatsapp.com/send?phone=393297451720" title="Messaggia su WhatsApp" target="_blank">
                     <img style="width:50px; height:50px; vertical-align:middle"src="https://img.icons8.com/color/48/000000/whatsapp.png"
                       width="larghezza in px" height="altezza in px" alt="Messaggia su WhatsApp"></a>
@@ -1630,10 +1630,11 @@
   <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
   <!-- Add fancyBox -->
   <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-   
+ <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="floating-wpp.min.js"></script> 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script>
-<!-- GetButton.io widget -->
+<!-- GetButton.io widget 
 <script type="text/javascript">
   (function () {
     var options = {
@@ -1647,7 +1648,17 @@
     var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
   })();
 </script>
-<!-- /GetButton.io widget -->
+ /GetButton.io widget -->
+<div id="myDiv"></div>
+<script type="text/javascript">
+  $(function () {
+    $('#myDiv').floatingWhatsApp({
+      phone: '393297451720',
+       popupMessage: 'Salve, posso aiutarla?',
+       showPopup: true
+    });
+  });
+</script>
 </body>
 
 </html>
