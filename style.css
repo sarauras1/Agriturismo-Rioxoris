@@ -2780,10 +2780,12 @@ RESERVATION SECTION
 div#cookieChoiceInfo {
   background-color: #b6bbba !important;
   color: #fff;
-  /* Colore testo */
   font-weight: bold;
   font-size: 14px;
   font-family: Georgia;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 #cookieChoiceInfo>div:nth-child(2)>div:nth-child(1)>a:nth-child(2),
@@ -2801,9 +2803,7 @@ div#cookieChoiceInfo {
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
-  display: flex;
-  align-self: center;
-  justify-self: center;
+  
 }
 
 #cookieChoiceInfo>div:nth-child(2):hover>div:nth-child(1):hover>a:nth-child(2):hover,
