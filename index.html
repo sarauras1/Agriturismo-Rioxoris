@@ -1687,6 +1687,45 @@
   })();
 </script>
 <!-- Codice per accettazione cookie - Inizio -->
+<style>
+  /* CSS */
+  div#cookieChoiceInfo {
+    background-color: #1fe0c9 !important;
+    color: #fff;
+    /* Colore testo */
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Georgia;
+  }
+
+  #cookieChoiceInfo>div:nth-child(2)>div:nth-child(1)>a:nth-child(2),
+  #cookieChoiceDismiss {
+    background: linear-gradient(to bottom, #fedede 4%, #e50909 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fedede', endColorstr='#e50909', GradientType=0);
+    box-shadow: 2px 2px 2px #aaa;
+    text-shadow: 1px 1px 1px #ccc;
+    line-height: 32px !important;
+    /* Altezza interlinea */
+    text-align: center;
+    padding: 3px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #cookieChoiceInfo>div:nth-child(2):hover>div:nth-child(1):hover>a:nth-child(2):hover,
+  #cookieChoiceDismiss:hover {
+    color: #4ce6d4;
+    box-shadow: 1px 1px 1px #aaa;
+    text-shadow: 0px 0px 0px #ccc;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+</style>
 <script type='text/javascript'>
   //<![CDATA[
   (function (window) {
@@ -1718,7 +1757,7 @@
           'background-color:#ccc;';
         var dialogStyle = 'z-index:1000;position:fixed;left:50%;top:50%';
         var contentStyle = 'position:relative;left:-50%;margin-top:-25%;' +
-          'background-color:#fff;padding:20px;box-shadow:4px 4px 25px #888;';
+          'background-color:#000; font-size:16px; padding:20px;box-shadow:4px 4px 25px #888;';
         var cookieConsentElement = document.createElement('div');
         cookieConsentElement.id = cookieConsentId;
         var glassPanel = document.createElement('div');
@@ -1728,9 +1767,9 @@
         var dialog = document.createElement('div');
         dialog.style.cssText = dialogStyle;
         var dismissLink = _createDismissLink(dismissText);
-        dismissLink.style.display = 'block';
+        dismissLink.style.display = 'inline';
         dismissLink.style.textAlign = 'right';
-        dismissLink.style.marginTop = '8px';
+        dismissLink.style.marginTop = '0px';
         content.appendChild(_createConsentText(cookieText));
         if (!!linkText && !!linkHref) {
           content.appendChild(_createInformationLink(linkText, linkHref));
@@ -1817,13 +1856,12 @@
     return cookieChoices;
   })(this);
   document.addEventListener('DOMContentLoaded', function (event) {
-    cookieChoices.showCookieConsentBar('Questo sito utilizza i cookie per migliorare servizi ed esperienza dei lettori. Se decidi di continuare la navigazione consideriamo che accetti il loro uso.',
-      'OK', 'Più Info', 'http://www.ideepercomputeredinternet.com/p/politica-dei-cookie.html');
+    cookieChoices.showCookieConsentDialog('Questo sito utilizza i cookie per migliorare servizi ed esperienza dei lettori. Se decidi di continuare la navigazione consideriamo che accetti il loro uso.',
+      'OK', '+Info', 'URL_PAGINA_PRIVACY');
   });
 //]]>
 </script>
 <!-- Codice per accettazione cookie - Fine -->
-</script>
 </body>
 
 </html>
