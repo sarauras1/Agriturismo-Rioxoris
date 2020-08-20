@@ -1672,7 +1672,14 @@
    
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script>
+  <!-- cookies-->
   <script src="assets/js/cookiechoices.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+      cookieChoices.showCookieConsentBar('Messaggio per i visitatori.',
+        'OK', '+Info', 'http://www.ideepercomputeredinternet.com/p/politica-dei-cookie.html');
+    });
+  </script>
 <!-- GetButton.io widget -->
 <script type="text/javascript">
   (function () {
