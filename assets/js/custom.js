@@ -129,8 +129,9 @@ jQuery(function($){
       infinite: true,
       arrows: false,
       autoplay: true,
-      speed: 500,      
-      cssEase: 'linear'
+      speed: 2000,      
+      cssEase: 'linear',
+      hover: 'pause'
     });       
 
   /* ----------------------------------------------------------- */
@@ -139,7 +140,7 @@ jQuery(function($){
 
     jQuery('.counter').counterUp({
         delay: 10,
-        time: 1000
+        time: 1000   
     });
 
   /* ----------------------------------------------------------- */
