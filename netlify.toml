@@ -1,8 +1,6 @@
 [[plugins]]
 package = "netlify-plugin-image-optim"
 
-[[plugins]]
-package = "@netlify/plugin-sitemap"
 
 [build]
   publish = "public"
@@ -13,7 +11,7 @@ package = "@netlify/plugin-sitemap"
 	[plugins.inputs]
 
 	# The base url of your site (optional, default = main URL set in Netlify)
-	baseUrl = "https://example.com"
+	baseUrl = "https://www.rioxoris.it"
 
 	# Path to the sitemap URL (optional, default = /sitemap.xml)
 	sitemapPath = "/sitemap.xml"
